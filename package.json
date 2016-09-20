@@ -1,0 +1,24 @@
+{
+  "name": "axibase_nodejs_client",
+  "version": "0.0.1",
+  "description": "",
+  "main": "client.js",
+  "dependencies": {
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michun/axibase_nodejs_client.git"
+  },
+  "author": "Michał Nowacki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michun/axibase_nodejs_client/issues"
+  },
+  "homepage": "https://github.com/Michun/axibase_nodejs_client#readme"
+}
