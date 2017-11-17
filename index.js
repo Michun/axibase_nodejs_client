@@ -44,16 +44,15 @@ function ATSDSocketClient(port, atsdUrl, logSystem) {
 
     this.client.on('close', function(err) {
         var self = this;
-        logSystem.log('Axibase: Socket close:', err.message, ' - Trying to reconnect');
+        logSystem.log('Axibase: Socket close:', ' - Trying to reconnect');
         setTimeout(function(){
             self.connect();
         }, 30000)
         
     });
-
     this.client.on('timeout', function(err) {
         var self = this;        
-        logSystem.error('Axibase: Socket error:', err.message, ' - Trying to reconnect');
+        logSystem.error('Axibase: Socket error:', ' - Trying to reconnect');
         setTimeout(function(){
             self.connect();
         }, 30000)    
